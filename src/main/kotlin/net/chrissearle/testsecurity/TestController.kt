@@ -17,5 +17,4 @@ class TestController {
 
     @GetMapping("/test")
     fun test() = "TEST"
-
 }
