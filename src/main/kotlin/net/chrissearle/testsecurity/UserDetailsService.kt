@@ -10,6 +10,10 @@ import reactor.core.publisher.Mono
 
 @Service
 class UserDetailsService : ReactiveUserDetailsService {
+
+    // Create a dummy user details service that will take any username with a password of "password"
+    // If username is "admin" - set ADMIN and USER roles
+    // If username is "user" - set USER role
     override fun findByUsername(username: String?): Mono<UserDetails> {
         if (username == null) {
             throw BadCredentialsException("Missing Credentials")

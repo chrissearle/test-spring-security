@@ -8,6 +8,8 @@ import org.springframework.security.config.web.server.invoke
 
 @EnableWebFluxSecurity
 class SecurityConfiguration {
+
+    // Configure security using the ServerHttpSecurityDsl
     @Bean
     fun springSecurityFilterChain(http: ServerHttpSecurity): SecurityWebFilterChain = http {
         csrf { disable() }

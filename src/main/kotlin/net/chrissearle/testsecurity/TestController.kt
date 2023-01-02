@@ -3,6 +3,7 @@ package net.chrissearle.testsecurity
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.RestController
 
+// Test endpoints
 @RestController
 class TestController {
     @GetMapping("/api/admin/test")
