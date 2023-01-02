@@ -8,3 +8,7 @@ This security works correctly in spring boot 2.x
 In spring boot 3 - /test is triggering login.
 
 TODO - Find out why :)
+
+---
+
+Update - was a simple fix - missing @Configuration annotation on SecurityConfiguration 
